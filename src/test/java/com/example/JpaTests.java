@@ -9,7 +9,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
@@ -54,7 +53,7 @@ public class JpaTests {
         user.setName("user1");
         user.setAge(18);
         userDao.save(user);
-        User user2 =  userDao.findByName("user1");
+        User user2 =  userDao.findByName("user1").get();
         user2.setName("user2");
         userDao.save(user2);
         assertThat(userDao.getOne(user.getId()).getName()).isEqualTo("user2");

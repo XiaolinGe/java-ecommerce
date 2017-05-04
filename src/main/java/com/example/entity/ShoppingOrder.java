@@ -9,22 +9,23 @@ import java.util.List;
 
 @Data
 @Entity
-public class Orders {
+public class ShoppingOrder {
     @Id
     @GeneratedValue
+
     private Long id;
 
     private Double price;
 
     private Date date;
 
-    private  String note;
+    private String note;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToMany(mappedBy = "orders")
+    @ManyToMany(mappedBy = "shoppingOrders")
     private List<Product> products;
 
 }

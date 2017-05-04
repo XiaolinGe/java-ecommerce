@@ -1,14 +1,10 @@
 package com.example.entity;
 
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Data
@@ -17,6 +13,7 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue
+
     private Long id;
 
     private String name;
@@ -31,7 +28,7 @@ public class User {
 
     private String email;
 
-    @OneToMany(mappedBy = "user")
-    private List<Orders> orders;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<ShoppingOrder> shoppingOrders;
 
 }

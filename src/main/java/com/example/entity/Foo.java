@@ -1,7 +1,6 @@
 package com.example.entity;
 
 import com.example.enums.Status;
-
 import lombok.Data;
 
 import javax.persistence.*;
@@ -15,6 +14,7 @@ public class Foo {
 
     @Enumerated(EnumType.STRING)
     private Status status;
+
 
     private String name;
 

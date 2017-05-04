@@ -23,9 +23,11 @@ repositories {
 
 
 dependencies {
+	compile group: 'io.javaslang', name: 'javaslang', version: '2.1.0-alpha'
 	compile group: 'com.alibaba', name: 'druid', version: '1.0.29'
     compile group: 'com.h2database', name: 'h2', version: '1.4.195'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-freemarker', version: '1.5.3.RELEASE'
+    compile('org.springframework.boot:spring-boot-starter')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-freemarker')
 	compile('org.springframework.boot:spring-boot-starter-web')

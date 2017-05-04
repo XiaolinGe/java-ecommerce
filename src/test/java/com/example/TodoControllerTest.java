@@ -42,7 +42,7 @@ public class TodoControllerTest {
         mvc.perform(get("/user/list"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("/user/list"))
-                .andExpect(forwardedUrl("/templates/user/list.ftl"))
+                .andExpect(forwardedUrl("/templates/list.ftl"))
                 .andExpect(model().attribute("todos", hasSize(2)))
                 .andExpect(model().attribute("todos", hasItem(
                         allOf(
