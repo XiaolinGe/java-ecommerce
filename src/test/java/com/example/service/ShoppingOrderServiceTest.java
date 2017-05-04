@@ -93,8 +93,8 @@ public class ShoppingOrderServiceTest {
 
     private void createProducts() throws Exception {
         List<Product> products = new ArrayList<>();
-        Product product1 = new Product().setName("product1").setPrice(100.00).setAmount(10L);
-        Product product2 = new Product().setName("product2").setPrice(200.00).setAmount(20L);
+        Product product1 = new Product().setName("product1").setPrice(100.00).setQuantity(10L);
+        Product product2 = new Product().setName("product2").setPrice(200.00).setQuantity(20L);
 
         products.add(product1);
         products.add(product2);

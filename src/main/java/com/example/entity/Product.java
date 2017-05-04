@@ -20,7 +20,7 @@ public class Product {
 
     private Double price;
 
-    private Long amount;
+    private Long quantity;
 
     @ManyToMany
 

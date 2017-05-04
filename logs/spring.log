@@ -16080,3 +16080,584 @@ FTL stack trace ("~" means nesting-related):
         user0_.phone as phone7_6_ 
     from
         user user0_
+2017-05-04 21:04:48.563  INFO 27429 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ee0c3c1: startup date [Thu May 04 20:40:20 NZST 2017]; root of context hierarchy
+2017-05-04 21:04:48.580  INFO 27429 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-04 21:04:48.581  INFO 27429 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-05-04 21:04:48.584  INFO 27429 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-05-04 21:04:48.601  INFO 27429 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2017-05-04 21:04:53.077  INFO 28091 --- [restartedMain] com.example.DemoApplication              : Starting DemoApplication on gezilindeMacBook-Air.local with PID 28091 (/Users/gezilin/Desktop/demo/build/classes/main started by gezilin in /Users/gezilin/Desktop/demo)
+2017-05-04 21:04:53.081  INFO 28091 --- [restartedMain] com.example.DemoApplication              : No active profile set, falling back to default profiles: default
+2017-05-04 21:04:53.167  INFO 28091 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e03232: startup date [Thu May 04 21:04:53 NZST 2017]; root of context hierarchy
+2017-05-04 21:04:54.873  INFO 28091 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-04 21:04:54.884  INFO 28091 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-04 21:04:54.885  INFO 28091 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-04 21:04:54.960  INFO 28091 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-04 21:04:54.960  INFO 28091 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1799 ms
+2017-05-04 21:04:54.965  INFO 28091 --- [localhost-startStop-1] com.example.config.DruidConfig           : init Druid Servlet Configuration 
+2017-05-04 21:04:55.089  INFO 28091 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-04 21:04:55.090  INFO 28091 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-04 21:04:55.090  INFO 28091 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-05-04 21:04:55.093  INFO 28091 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-04 21:04:55.094  INFO 28091 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-04 21:04:55.094  INFO 28091 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-04 21:04:55.094  INFO 28091 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-04 21:04:55.094  INFO 28091 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-04 21:04:55.580  INFO 28091 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-05-04 21:04:55.778  INFO 28091 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-04 21:04:55.790  INFO 28091 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-04 21:04:55.840  INFO 28091 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-04 21:04:55.841  INFO 28091 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-04 21:04:55.841  INFO 28091 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-04 21:04:55.875  INFO 28091 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-04 21:04:55.956  INFO 28091 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-04 21:04:56.459  INFO 28091 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-05-04 21:04:56.615  INFO 28091 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-04 21:04:57.168  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e03232: startup date [Thu May 04 21:04:53 NZST 2017]; root of context hierarchy
+2017-05-04 21:04:57.221  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/add],methods=[POST]}" onto public java.lang.String com.example.web.ProductController.add(com.example.entity.Product) throws java.text.ParseException
+2017-05-04 21:04:57.221  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/form],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.form(org.springframework.ui.ModelMap)
+2017-05-04 21:04:57.222  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.delete(java.lang.Long)
+2017-05-04 21:04:57.222  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/list],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.list(com.example.entity.Product,org.springframework.ui.ModelMap)
+2017-05-04 21:04:57.222  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/edit],methods=[POST]}" onto public java.lang.String com.example.web.ProductController.edit(com.example.entity.Product)
+2017-05-04 21:04:57.222  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-04 21:04:57.224  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/add],methods=[POST]}" onto public java.lang.String com.example.web.UserController.add(com.example.entity.User) throws java.text.ParseException
+2017-05-04 21:04:57.224  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/form],methods=[GET]}" onto public java.lang.String com.example.web.UserController.form(org.springframework.ui.ModelMap)
+2017-05-04 21:04:57.224  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.UserController.delete(java.lang.Long)
+2017-05-04 21:04:57.224  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/list],methods=[GET]}" onto public java.lang.String com.example.web.UserController.list(com.example.entity.User,org.springframework.ui.ModelMap)
+2017-05-04 21:04:57.225  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/edit],methods=[POST]}" onto public java.lang.String com.example.web.UserController.edit(com.example.entity.User)
+2017-05-04 21:04:57.225  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.UserController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-04 21:04:57.227  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-04 21:04:57.227  INFO 28091 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-04 21:04:57.253  INFO 28091 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-04 21:04:57.253  INFO 28091 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-04 21:04:57.294  INFO 28091 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-04 21:04:57.503  INFO 28091 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-05-04 21:04:57.629  INFO 28091 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-04 21:04:57.698  INFO 28091 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-04 21:04:57.699  INFO 28091 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-05-04 21:04:57.704  INFO 28091 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-05-04 21:04:57.795  INFO 28091 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-04 21:04:57.803  INFO 28091 --- [restartedMain] com.example.DemoApplication              : Started DemoApplication in 5.376 seconds (JVM running for 5.99)
+2017-05-04 21:05:06.499  INFO 28091 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-04 21:05:06.502  INFO 28091 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-04 21:05:06.519  INFO 28091 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-05-04 21:05:06.566  INFO 28091 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-05-04 21:05:06.628 DEBUG 28091 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.amount as amount2_3_,
+        product0_.name as name3_3_,
+        product0_.price as price4_3_ 
+    from
+        product product0_
+2017-05-04 21:05:19.427 DEBUG 28091 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (amount, name, price) 
+    values
+        (?, ?, ?)
+2017-05-04 21:05:19.437 TRACE 28091 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [12]
+2017-05-04 21:05:19.438 TRACE 28091 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [prod1]
+2017-05-04 21:05:19.439 TRACE 28091 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DOUBLE] - [12.0]
+2017-05-04 21:05:19.476 DEBUG 28091 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.amount as amount2_3_,
+        product0_.name as name3_3_,
+        product0_.price as price4_3_ 
+    from
+        product product0_
+2017-05-04 21:05:22.229 DEBUG 28091 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_0_,
+        product0_.amount as amount2_3_0_,
+        product0_.name as name3_3_0_,
+        product0_.price as price4_3_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2017-05-04 21:05:22.245 TRACE 28091 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [9]
+2017-05-04 21:05:26.556 DEBUG 28091 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_0_,
+        product0_.amount as amount2_3_0_,
+        product0_.name as name3_3_0_,
+        product0_.price as price4_3_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2017-05-04 21:05:26.557 TRACE 28091 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [9]
+2017-05-04 21:05:26.573 DEBUG 28091 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    update
+        product 
+    set
+        amount=?,
+        name=?,
+        price=? 
+    where
+        id=?
+2017-05-04 21:05:26.576 TRACE 28091 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [123]
+2017-05-04 21:05:26.576 TRACE 28091 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [prod1]
+2017-05-04 21:05:26.576 TRACE 28091 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DOUBLE] - [123.0]
+2017-05-04 21:05:26.577 TRACE 28091 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [9]
+2017-05-04 21:05:26.579 DEBUG 28091 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    delete 
+    from
+        product_orders 
+    where
+        product_id=?
+2017-05-04 21:05:26.582 TRACE 28091 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [9]
+2017-05-04 21:05:26.599 DEBUG 28091 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.amount as amount2_3_,
+        product0_.name as name3_3_,
+        product0_.price as price4_3_ 
+    from
+        product product0_
+2017-05-04 21:05:33.135 DEBUG 28091 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_0_,
+        product0_.amount as amount2_3_0_,
+        product0_.name as name3_3_0_,
+        product0_.price as price4_3_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2017-05-04 21:05:33.138 TRACE 28091 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [9]
+2017-05-04 21:05:33.141 DEBUG 28091 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    delete 
+    from
+        product_orders 
+    where
+        product_id=?
+2017-05-04 21:05:33.141 TRACE 28091 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [9]
+2017-05-04 21:05:33.142 DEBUG 28091 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    delete 
+    from
+        product 
+    where
+        id=?
+2017-05-04 21:05:33.143 TRACE 28091 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [9]
+2017-05-04 21:05:33.163 DEBUG 28091 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.amount as amount2_3_,
+        product0_.name as name3_3_,
+        product0_.price as price4_3_ 
+    from
+        product product0_
+2017-05-04 21:05:45.573 DEBUG 28091 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (amount, name, price) 
+    values
+        (?, ?, ?)
+2017-05-04 21:05:45.573 TRACE 28091 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [10]
+2017-05-04 21:05:45.573 TRACE 28091 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [prod1]
+2017-05-04 21:05:45.574 TRACE 28091 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DOUBLE] - [10.0]
+2017-05-04 21:05:45.590 DEBUG 28091 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.amount as amount2_3_,
+        product0_.name as name3_3_,
+        product0_.price as price4_3_ 
+    from
+        product product0_
+2017-05-04 21:10:00.241  INFO 28091 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e03232: startup date [Thu May 04 21:04:53 NZST 2017]; root of context hierarchy
+2017-05-04 21:10:00.244  INFO 28091 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-04 21:10:00.244  INFO 28091 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-05-04 21:10:00.245  INFO 28091 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-05-04 21:10:00.250  INFO 28091 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2017-05-04 21:10:04.912  INFO 28210 --- [restartedMain] com.example.DemoApplication              : Starting DemoApplication on gezilindeMacBook-Air.local with PID 28210 (/Users/gezilin/Desktop/demo/build/classes/main started by gezilin in /Users/gezilin/Desktop/demo)
+2017-05-04 21:10:04.914  INFO 28210 --- [restartedMain] com.example.DemoApplication              : No active profile set, falling back to default profiles: default
+2017-05-04 21:10:05.011  INFO 28210 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c77a698: startup date [Thu May 04 21:10:05 NZST 2017]; root of context hierarchy
+2017-05-04 21:10:06.826  INFO 28210 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-04 21:10:06.836  INFO 28210 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-04 21:10:06.837  INFO 28210 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-04 21:10:06.907  INFO 28210 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-04 21:10:06.907  INFO 28210 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1900 ms
+2017-05-04 21:10:06.912  INFO 28210 --- [localhost-startStop-1] com.example.config.DruidConfig           : init Druid Servlet Configuration 
+2017-05-04 21:10:07.029  INFO 28210 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-04 21:10:07.033  INFO 28210 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-04 21:10:07.033  INFO 28210 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-05-04 21:10:07.036  INFO 28210 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-04 21:10:07.037  INFO 28210 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-04 21:10:07.038  INFO 28210 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-04 21:10:07.038  INFO 28210 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-04 21:10:07.038  INFO 28210 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-04 21:10:07.474  INFO 28210 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-05-04 21:10:07.665  INFO 28210 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-04 21:10:07.675  INFO 28210 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-04 21:10:07.739  INFO 28210 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-04 21:10:07.741  INFO 28210 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-04 21:10:07.741  INFO 28210 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-04 21:10:07.776  INFO 28210 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-04 21:10:07.851  INFO 28210 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-04 21:10:08.355  INFO 28210 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-05-04 21:10:08.777  INFO 28210 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-04 21:10:09.236  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c77a698: startup date [Thu May 04 21:10:05 NZST 2017]; root of context hierarchy
+2017-05-04 21:10:09.283  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/add],methods=[POST]}" onto public java.lang.String com.example.web.ProductController.add(com.example.entity.Product) throws java.text.ParseException
+2017-05-04 21:10:09.284  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/form],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.form(org.springframework.ui.ModelMap)
+2017-05-04 21:10:09.284  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.delete(java.lang.Long)
+2017-05-04 21:10:09.284  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/list],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.list(com.example.entity.Product,org.springframework.ui.ModelMap)
+2017-05-04 21:10:09.284  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/edit],methods=[POST]}" onto public java.lang.String com.example.web.ProductController.edit(com.example.entity.Product)
+2017-05-04 21:10:09.285  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-04 21:10:09.286  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/add],methods=[POST]}" onto public java.lang.String com.example.web.UserController.add(com.example.entity.User) throws java.text.ParseException
+2017-05-04 21:10:09.286  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/form],methods=[GET]}" onto public java.lang.String com.example.web.UserController.form(org.springframework.ui.ModelMap)
+2017-05-04 21:10:09.287  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.UserController.delete(java.lang.Long)
+2017-05-04 21:10:09.287  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/list],methods=[GET]}" onto public java.lang.String com.example.web.UserController.list(com.example.entity.User,org.springframework.ui.ModelMap)
+2017-05-04 21:10:09.287  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/edit],methods=[POST]}" onto public java.lang.String com.example.web.UserController.edit(com.example.entity.User)
+2017-05-04 21:10:09.287  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.UserController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-04 21:10:09.289  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-04 21:10:09.289  INFO 28210 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-04 21:10:09.315  INFO 28210 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-04 21:10:09.315  INFO 28210 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-04 21:10:09.347  INFO 28210 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-04 21:10:09.493  INFO 28210 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-05-04 21:10:09.639  INFO 28210 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-04 21:10:09.730  INFO 28210 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-04 21:10:09.733  INFO 28210 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-05-04 21:10:09.740  INFO 28210 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-05-04 21:10:09.784  INFO 28210 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-04 21:10:09.789  INFO 28210 --- [restartedMain] com.example.DemoApplication              : Started DemoApplication in 5.507 seconds (JVM running for 6.09)
+2017-05-04 21:10:14.374  INFO 28210 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-04 21:10:14.374  INFO 28210 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-04 21:10:14.388  INFO 28210 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2017-05-04 21:10:14.435  INFO 28210 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-05-04 21:10:14.492 DEBUG 28210 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-04 21:10:14.552 ERROR 28210 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.example.web.ProductController.lambda$list$0(ProductController.java:34) ~[main/:na]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_102]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374) ~[na:1.8.0_102]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[na:1.8.0_102]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[na:1.8.0_102]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[na:1.8.0_102]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_102]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[na:1.8.0_102]
+	at com.example.web.ProductController.list(ProductController.java:36) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_102]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_102]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_102]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_102]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.0.29.jar:1.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_102]
+
+2017-05-04 21:12:03.836  INFO 28210 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c77a698: startup date [Thu May 04 21:10:05 NZST 2017]; root of context hierarchy
+2017-05-04 21:12:03.852  INFO 28210 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-04 21:12:03.853  INFO 28210 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-05-04 21:12:03.855  INFO 28210 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-05-04 21:12:03.867  INFO 28210 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2017-05-04 21:12:06.299  INFO 28239 --- [restartedMain] com.example.DemoApplication              : Starting DemoApplication on gezilindeMacBook-Air.local with PID 28239 (/Users/gezilin/Desktop/demo/build/classes/main started by gezilin in /Users/gezilin/Desktop/demo)
+2017-05-04 21:12:06.308  INFO 28239 --- [restartedMain] com.example.DemoApplication              : No active profile set, falling back to default profiles: default
+2017-05-04 21:12:06.421  INFO 28239 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e03232: startup date [Thu May 04 21:12:06 NZST 2017]; root of context hierarchy
+2017-05-04 21:12:08.232  INFO 28239 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-04 21:12:08.240  INFO 28239 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-04 21:12:08.241  INFO 28239 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-04 21:12:08.300  INFO 28239 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-04 21:12:08.301  INFO 28239 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1883 ms
+2017-05-04 21:12:08.308  INFO 28239 --- [localhost-startStop-1] com.example.config.DruidConfig           : init Druid Servlet Configuration 
+2017-05-04 21:12:08.450  INFO 28239 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-04 21:12:08.451  INFO 28239 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-04 21:12:08.451  INFO 28239 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-05-04 21:12:08.454  INFO 28239 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-04 21:12:08.454  INFO 28239 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-04 21:12:08.455  INFO 28239 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-04 21:12:08.455  INFO 28239 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-04 21:12:08.456  INFO 28239 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-04 21:12:08.850  INFO 28239 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-05-04 21:12:09.050  INFO 28239 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-04 21:12:09.062  INFO 28239 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-04 21:12:09.130  INFO 28239 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-04 21:12:09.131  INFO 28239 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-04 21:12:09.132  INFO 28239 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-04 21:12:09.161  INFO 28239 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-04 21:12:09.240  INFO 28239 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-04 21:12:09.873  INFO 28239 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-05-04 21:12:10.061  INFO 28239 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-04 21:12:11.075  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e03232: startup date [Thu May 04 21:12:06 NZST 2017]; root of context hierarchy
+2017-05-04 21:12:11.161  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/add],methods=[POST]}" onto public java.lang.String com.example.web.ProductController.add(com.example.entity.Product) throws java.text.ParseException
+2017-05-04 21:12:11.163  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/form],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.form(org.springframework.ui.ModelMap)
+2017-05-04 21:12:11.163  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.delete(java.lang.Long)
+2017-05-04 21:12:11.164  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/list],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.list(com.example.entity.Product,org.springframework.ui.ModelMap)
+2017-05-04 21:12:11.164  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/edit],methods=[POST]}" onto public java.lang.String com.example.web.ProductController.edit(com.example.entity.Product)
+2017-05-04 21:12:11.165  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.ProductController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-04 21:12:11.168  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/add],methods=[POST]}" onto public java.lang.String com.example.web.UserController.add(com.example.entity.User) throws java.text.ParseException
+2017-05-04 21:12:11.168  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/form],methods=[GET]}" onto public java.lang.String com.example.web.UserController.form(org.springframework.ui.ModelMap)
+2017-05-04 21:12:11.169  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.UserController.delete(java.lang.Long)
+2017-05-04 21:12:11.169  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/list],methods=[GET]}" onto public java.lang.String com.example.web.UserController.list(com.example.entity.User,org.springframework.ui.ModelMap)
+2017-05-04 21:12:11.171  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/edit],methods=[POST]}" onto public java.lang.String com.example.web.UserController.edit(com.example.entity.User)
+2017-05-04 21:12:11.171  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.UserController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-04 21:12:11.174  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-04 21:12:11.175  INFO 28239 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-04 21:12:11.224  INFO 28239 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-04 21:12:11.224  INFO 28239 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-04 21:12:11.298  INFO 28239 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-04 21:12:11.528  INFO 28239 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-05-04 21:12:11.653  INFO 28239 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-04 21:12:11.721  INFO 28239 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-04 21:12:11.723  INFO 28239 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-05-04 21:12:11.729  INFO 28239 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-05-04 21:12:11.828  INFO 28239 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-04 21:12:11.833  INFO 28239 --- [restartedMain] com.example.DemoApplication              : Started DemoApplication in 6.24 seconds (JVM running for 6.908)
+2017-05-04 21:12:12.603  INFO 28239 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-04 21:12:12.603  INFO 28239 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-04 21:12:12.616  INFO 28239 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2017-05-04 21:12:12.661  INFO 28239 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-05-04 21:12:12.718 DEBUG 28239 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-04 21:12:12.834 ERROR 28239 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.example.web.ProductController.lambda$list$0(ProductController.java:34) ~[main/:na]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_102]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374) ~[na:1.8.0_102]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[na:1.8.0_102]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[na:1.8.0_102]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[na:1.8.0_102]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_102]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[na:1.8.0_102]
+	at com.example.web.ProductController.list(ProductController.java:36) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_102]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_102]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_102]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_102]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.0.29.jar:1.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_102]
+
+2017-05-04 21:14:31.856 DEBUG 28239 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-04 21:14:34.811 DEBUG 28239 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_0_,
+        product0_.name as name2_3_0_,
+        product0_.price as price3_3_0_,
+        product0_.quantity as quantity4_3_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2017-05-04 21:14:34.832 TRACE 28239 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [10]
+2017-05-04 21:14:38.972 DEBUG 28239 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_0_,
+        product0_.name as name2_3_0_,
+        product0_.price as price3_3_0_,
+        product0_.quantity as quantity4_3_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2017-05-04 21:14:38.973 TRACE 28239 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [10]
+2017-05-04 21:14:38.990 DEBUG 28239 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    update
+        product 
+    set
+        name=?,
+        price=?,
+        quantity=? 
+    where
+        id=?
+2017-05-04 21:14:38.993 TRACE 28239 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [prod1]
+2017-05-04 21:14:38.994 TRACE 28239 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DOUBLE] - [10.0]
+2017-05-04 21:14:38.995 TRACE 28239 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [15]
+2017-05-04 21:14:38.995 TRACE 28239 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [10]
+2017-05-04 21:14:38.996 DEBUG 28239 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    delete 
+    from
+        product_orders 
+    where
+        product_id=?
+2017-05-04 21:14:38.998 TRACE 28239 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [10]
+2017-05-04 21:14:39.015 DEBUG 28239 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-04 21:14:41.192 DEBUG 28239 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_0_,
+        product0_.name as name2_3_0_,
+        product0_.price as price3_3_0_,
+        product0_.quantity as quantity4_3_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2017-05-04 21:14:41.192 TRACE 28239 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [10]
+2017-05-04 21:14:41.197 DEBUG 28239 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    delete 
+    from
+        product_orders 
+    where
+        product_id=?
+2017-05-04 21:14:41.197 TRACE 28239 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [10]
+2017-05-04 21:14:41.198 DEBUG 28239 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    delete 
+    from
+        product 
+    where
+        id=?
+2017-05-04 21:14:41.199 TRACE 28239 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [10]
+2017-05-04 21:14:41.210 DEBUG 28239 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-04 21:14:57.529 DEBUG 28239 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (name, price, quantity) 
+    values
+        (?, ?, ?)
+2017-05-04 21:14:57.533 TRACE 28239 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [prod1]
+2017-05-04 21:14:57.534 TRACE 28239 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DOUBLE] - [12.0]
+2017-05-04 21:14:57.534 TRACE 28239 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [12]
+2017-05-04 21:14:57.553 DEBUG 28239 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
