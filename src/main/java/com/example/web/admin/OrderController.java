@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 
 
 @Controller
-@RequestMapping("/orders")
+@RequestMapping("/admin/orders")
 public class OrderController {
 
     @Autowired
@@ -38,7 +38,7 @@ public class OrderController {
         List<ShoppingOrder> orders = shoppingOrderService.findAll();
 
         map.addAttribute("orders", orders);
-        return "/orders/list";
+        return "/admin/orders/list";
     }
 
     @GetMapping("form")
@@ -48,13 +48,13 @@ public class OrderController {
         List<Product> products = productDao.findAll();
         map.addAttribute("users", users);
         map.addAttribute("products", products);
-        return "/orders/form";
+        return "/admin/orders/form";
     }
 
     @PostMapping("add")
     public String add(String note, Long userId, Long[] productIds) throws ParseException {
         shoppingOrderService.createOrder(note, userId, Arrays.asList(productIds));
-        return "redirect:/orders/list ";
+        return "redirect:/admin/orders/list ";
     }
 
 }

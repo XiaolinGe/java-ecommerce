@@ -20983,3 +20983,970 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
 	... 62 common frames omitted
 
+2017-05-06 14:32:58.074  INFO 35338 --- [main] com.example.TodoControllerTest           : Starting TodoControllerTest on gezilindeMacBook-Air.local with PID 35338 (started by gezilin in /Users/gezilin/Desktop/demo)
+2017-05-06 14:32:58.081  INFO 35338 --- [main] com.example.TodoControllerTest           : No active profile set, falling back to default profiles: default
+2017-05-06 14:32:58.198  INFO 35338 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3f191845: startup date [Sat May 06 14:32:58 NZST 2017]; root of context hierarchy
+2017-05-06 14:33:01.072  WARN 35338 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productDao': Cannot create inner bean '(inner bean)#169da7f2' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#169da7f2': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2017-05-06 14:33:01.081  INFO 35338 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-05-06 14:33:01.115 ERROR 35338 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field productDao in com.example.service.ProductServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2017-05-06 14:33:01.185  INFO 35338 --- [main] com.example.TodoControllerTest           : Starting TodoControllerTest on gezilindeMacBook-Air.local with PID 35338 (started by gezilin in /Users/gezilin/Desktop/demo)
+2017-05-06 14:33:01.186  INFO 35338 --- [main] com.example.TodoControllerTest           : No active profile set, falling back to default profiles: default
+2017-05-06 14:33:01.190  INFO 35338 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2228db21: startup date [Sat May 06 14:33:01 NZST 2017]; root of context hierarchy
+2017-05-06 14:33:01.597  WARN 35338 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productDao': Cannot create inner bean '(inner bean)#5631962' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#5631962': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2017-05-06 14:33:01.599  INFO 35338 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-05-06 14:33:01.635 ERROR 35338 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field productDao in com.example.service.ProductServiceImpl required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2017-05-06 14:33:01.645 ERROR 35338 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7c469c48] to prepare test instance [com.example.TodoControllerTest@659a969b]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) ~[spring-boot-test-autoconfigure-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productDao': Cannot create inner bean '(inner bean)#5631962' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#5631962': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productDao': Cannot create inner bean '(inner bean)#5631962' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#5631962': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1531) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1276) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 41 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#5631962': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:448) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 54 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:687) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1207) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 62 common frames omitted
+
+2017-05-06 14:33:23.072  INFO 35352 --- [restartedMain] com.example.DemoApplication              : Starting DemoApplication on gezilindeMacBook-Air.local with PID 35352 (/Users/gezilin/Desktop/demo/build/classes/main started by gezilin in /Users/gezilin/Desktop/demo)
+2017-05-06 14:33:23.074  INFO 35352 --- [restartedMain] com.example.DemoApplication              : No active profile set, falling back to default profiles: default
+2017-05-06 14:33:23.149  INFO 35352 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ee0c3c1: startup date [Sat May 06 14:33:23 NZST 2017]; root of context hierarchy
+2017-05-06 14:33:25.976  INFO 35352 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-06 14:33:26.007  INFO 35352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-06 14:33:26.011  INFO 35352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-06 14:33:26.195  INFO 35352 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-06 14:33:26.196  INFO 35352 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3052 ms
+2017-05-06 14:33:26.206  INFO 35352 --- [localhost-startStop-1] com.example.config.DruidConfig           : init Druid Servlet Configuration 
+2017-05-06 14:33:26.391  INFO 35352 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-06 14:33:26.395  INFO 35352 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-06 14:33:26.396  INFO 35352 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-05-06 14:33:26.400  INFO 35352 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-06 14:33:26.401  INFO 35352 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-06 14:33:26.401  INFO 35352 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-06 14:33:26.402  INFO 35352 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-06 14:33:26.402  INFO 35352 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-06 14:33:27.444  INFO 35352 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-05-06 14:33:27.953  INFO 35352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-06 14:33:27.992  INFO 35352 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-06 14:33:28.383  INFO 35352 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-06 14:33:28.387  INFO 35352 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-06 14:33:28.391  INFO 35352 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-06 14:33:28.604  INFO 35352 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-06 14:33:29.109  INFO 35352 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-06 14:33:30.765  INFO 35352 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-05-06 14:33:31.164  INFO 35352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-06 14:33:32.494  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ee0c3c1: startup date [Sat May 06 14:33:23 NZST 2017]; root of context hierarchy
+2017-05-06 14:33:32.643  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.OrderController.add(java.lang.String,java.lang.Long,java.lang.Long[]) throws java.text.ParseException
+2017-05-06 14:33:32.644  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.OrderController.form(org.springframework.ui.ModelMap)
+2017-05-06 14:33:32.645  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.OrderController.list(com.example.entity.ShoppingOrder,org.springframework.ui.ModelMap)
+2017-05-06 14:33:32.646  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.ProductController.add(com.example.entity.Product) throws java.text.ParseException
+2017-05-06 14:33:32.647  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.form(org.springframework.ui.ModelMap)
+2017-05-06 14:33:32.647  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.delete(java.lang.Long)
+2017-05-06 14:33:32.648  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.list(com.example.entity.Product,org.springframework.ui.ModelMap)
+2017-05-06 14:33:32.648  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/edit],methods=[POST]}" onto public java.lang.String com.example.web.admin.ProductController.edit(com.example.entity.Product)
+2017-05-06 14:33:32.648  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-06 14:33:32.650  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.UserController.add(com.example.entity.User) throws java.text.ParseException
+2017-05-06 14:33:32.650  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.form(org.springframework.ui.ModelMap)
+2017-05-06 14:33:32.651  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.delete(java.lang.Long)
+2017-05-06 14:33:32.651  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.list(com.example.entity.User,org.springframework.ui.ModelMap)
+2017-05-06 14:33:32.651  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/edit],methods=[POST]}" onto public java.lang.String com.example.web.admin.UserController.edit(com.example.entity.User)
+2017-05-06 14:33:32.652  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-06 14:33:32.653  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-06 14:33:32.654  INFO 35352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-06 14:33:32.689  INFO 35352 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 14:33:32.690  INFO 35352 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 14:33:32.744  INFO 35352 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 14:33:33.172  INFO 35352 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-05-06 14:33:33.425  INFO 35352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-06 14:33:33.513  INFO 35352 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-06 14:33:33.514  INFO 35352 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-05-06 14:33:33.521  INFO 35352 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-05-06 14:33:33.648  INFO 35352 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-06 14:33:33.653  INFO 35352 --- [restartedMain] com.example.DemoApplication              : Started DemoApplication in 10.976 seconds (JVM running for 11.599)
+2017-05-06 14:33:56.271  INFO 35352 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-06 14:33:56.273  INFO 35352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-06 14:33:56.303  INFO 35352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2017-05-06 14:33:56.469  INFO 35352 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-05-06 14:33:56.761 DEBUG 35352 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 14:35:54.727 DEBUG 35352 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 14:39:05.466  INFO 35352 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ee0c3c1: startup date [Sat May 06 14:33:23 NZST 2017]; root of context hierarchy
+2017-05-06 14:39:05.471  INFO 35352 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-06 14:39:05.471  INFO 35352 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-05-06 14:39:05.472  INFO 35352 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-05-06 14:39:05.484  INFO 35352 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2017-05-06 14:39:08.739  INFO 35460 --- [restartedMain] com.example.DemoApplication              : Starting DemoApplication on gezilindeMacBook-Air.local with PID 35460 (/Users/gezilin/Desktop/demo/build/classes/main started by gezilin in /Users/gezilin/Desktop/demo)
+2017-05-06 14:39:08.740  INFO 35460 --- [restartedMain] com.example.DemoApplication              : No active profile set, falling back to default profiles: default
+2017-05-06 14:39:08.873  INFO 35460 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@478a9f9b: startup date [Sat May 06 14:39:08 NZST 2017]; root of context hierarchy
+2017-05-06 14:39:10.701  INFO 35460 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-06 14:39:10.711  INFO 35460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-06 14:39:10.712  INFO 35460 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-06 14:39:10.786  INFO 35460 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-06 14:39:10.787  INFO 35460 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1924 ms
+2017-05-06 14:39:10.792  INFO 35460 --- [localhost-startStop-1] com.example.config.DruidConfig           : init Druid Servlet Configuration 
+2017-05-06 14:39:10.917  INFO 35460 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-06 14:39:10.918  INFO 35460 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-06 14:39:10.919  INFO 35460 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-05-06 14:39:10.921  INFO 35460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-06 14:39:10.921  INFO 35460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-06 14:39:10.921  INFO 35460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-06 14:39:10.921  INFO 35460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-06 14:39:10.922  INFO 35460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-06 14:39:11.371  INFO 35460 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-05-06 14:39:11.576  INFO 35460 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-06 14:39:11.587  INFO 35460 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-06 14:39:11.654  INFO 35460 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-06 14:39:11.656  INFO 35460 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-06 14:39:11.657  INFO 35460 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-06 14:39:11.690  INFO 35460 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-06 14:39:11.766  INFO 35460 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-06 14:39:12.333  INFO 35460 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-05-06 14:39:12.521  INFO 35460 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-06 14:39:13.079  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@478a9f9b: startup date [Sat May 06 14:39:08 NZST 2017]; root of context hierarchy
+2017-05-06 14:39:13.136  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.OrderController.add(java.lang.String,java.lang.Long,java.lang.Long[]) throws java.text.ParseException
+2017-05-06 14:39:13.136  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.OrderController.form(org.springframework.ui.ModelMap)
+2017-05-06 14:39:13.137  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.OrderController.list(com.example.entity.ShoppingOrder,org.springframework.ui.ModelMap)
+2017-05-06 14:39:13.138  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.ProductController.add(com.example.entity.Product) throws java.text.ParseException
+2017-05-06 14:39:13.139  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.form(org.springframework.ui.ModelMap)
+2017-05-06 14:39:13.139  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.delete(java.lang.Long)
+2017-05-06 14:39:13.139  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.list(com.example.entity.Product,org.springframework.ui.ModelMap)
+2017-05-06 14:39:13.139  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/edit],methods=[POST]}" onto public java.lang.String com.example.web.admin.ProductController.edit(com.example.entity.Product)
+2017-05-06 14:39:13.140  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-06 14:39:13.144  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.UserController.add(com.example.entity.User) throws java.text.ParseException
+2017-05-06 14:39:13.144  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.form(org.springframework.ui.ModelMap)
+2017-05-06 14:39:13.144  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.delete(java.lang.Long)
+2017-05-06 14:39:13.145  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.list(com.example.entity.User,org.springframework.ui.ModelMap)
+2017-05-06 14:39:13.145  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/edit],methods=[POST]}" onto public java.lang.String com.example.web.admin.UserController.edit(com.example.entity.User)
+2017-05-06 14:39:13.145  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-06 14:39:13.147  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-06 14:39:13.147  INFO 35460 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-06 14:39:13.172  INFO 35460 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 14:39:13.172  INFO 35460 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 14:39:13.208  INFO 35460 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 14:39:13.391  INFO 35460 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-05-06 14:39:13.537  INFO 35460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-06 14:39:13.603  INFO 35460 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-06 14:39:13.604  INFO 35460 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-05-06 14:39:13.610  INFO 35460 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-05-06 14:39:13.692  INFO 35460 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-06 14:39:13.696  INFO 35460 --- [restartedMain] com.example.DemoApplication              : Started DemoApplication in 5.548 seconds (JVM running for 6.718)
+2017-05-06 14:52:07.959  INFO 35460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-06 14:52:07.964  INFO 35460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-06 14:52:07.979  INFO 35460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-05-06 14:52:08.025  INFO 35460 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-05-06 14:52:08.084 DEBUG 35460 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 14:54:46.425  INFO 35460 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@478a9f9b: startup date [Sat May 06 14:39:08 NZST 2017]; root of context hierarchy
+2017-05-06 14:54:46.431  INFO 35460 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-06 14:54:46.431  INFO 35460 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-05-06 14:54:46.433  INFO 35460 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-05-06 14:54:46.439  INFO 35460 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2017-05-06 14:54:49.769  INFO 35727 --- [restartedMain] com.example.DemoApplication              : Starting DemoApplication on gezilindeMacBook-Air.local with PID 35727 (/Users/gezilin/Desktop/demo/build/classes/main started by gezilin in /Users/gezilin/Desktop/demo)
+2017-05-06 14:54:49.779  INFO 35727 --- [restartedMain] com.example.DemoApplication              : No active profile set, falling back to default profiles: default
+2017-05-06 14:54:49.885  INFO 35727 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e03232: startup date [Sat May 06 14:54:49 NZST 2017]; root of context hierarchy
+2017-05-06 14:54:52.070  INFO 35727 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-06 14:54:52.080  INFO 35727 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-06 14:54:52.081  INFO 35727 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-06 14:54:52.171  INFO 35727 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-06 14:54:52.171  INFO 35727 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2291 ms
+2017-05-06 14:54:52.177  INFO 35727 --- [localhost-startStop-1] com.example.config.DruidConfig           : init Druid Servlet Configuration 
+2017-05-06 14:54:52.305  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-06 14:54:52.306  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-06 14:54:52.307  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-05-06 14:54:52.309  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-06 14:54:52.310  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-06 14:54:52.311  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-06 14:54:52.311  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-06 14:54:52.311  INFO 35727 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-06 14:54:52.694  INFO 35727 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-05-06 14:54:52.925  INFO 35727 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-06 14:54:52.937  INFO 35727 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-06 14:54:52.990  INFO 35727 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-06 14:54:52.992  INFO 35727 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-06 14:54:52.993  INFO 35727 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-06 14:54:53.028  INFO 35727 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-06 14:54:53.107  INFO 35727 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-06 14:54:53.671  INFO 35727 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-05-06 14:54:53.870  INFO 35727 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-06 14:54:54.450  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e03232: startup date [Sat May 06 14:54:49 NZST 2017]; root of context hierarchy
+2017-05-06 14:54:54.505  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.OrderController.add(java.lang.String,java.lang.Long,java.lang.Long[]) throws java.text.ParseException
+2017-05-06 14:54:54.506  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.OrderController.form(org.springframework.ui.ModelMap)
+2017-05-06 14:54:54.507  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/orders/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.OrderController.list(com.example.entity.ShoppingOrder,org.springframework.ui.ModelMap)
+2017-05-06 14:54:54.508  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.ProductController.add(com.example.entity.Product) throws java.text.ParseException
+2017-05-06 14:54:54.509  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.form(org.springframework.ui.ModelMap)
+2017-05-06 14:54:54.509  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.delete(java.lang.Long)
+2017-05-06 14:54:54.509  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.list(com.example.entity.Product,org.springframework.ui.ModelMap)
+2017-05-06 14:54:54.510  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-06 14:54:54.510  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/edit],methods=[POST]}" onto public java.lang.String com.example.web.admin.ProductController.edit(com.example.entity.Product)
+2017-05-06 14:54:54.512  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.UserController.add(com.example.entity.User) throws java.text.ParseException
+2017-05-06 14:54:54.513  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.form(org.springframework.ui.ModelMap)
+2017-05-06 14:54:54.513  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.delete(java.lang.Long)
+2017-05-06 14:54:54.513  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.list(com.example.entity.User,org.springframework.ui.ModelMap)
+2017-05-06 14:54:54.513  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-06 14:54:54.514  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/edit],methods=[POST]}" onto public java.lang.String com.example.web.admin.UserController.edit(com.example.entity.User)
+2017-05-06 14:54:54.515  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-06 14:54:54.516  INFO 35727 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-06 14:54:54.542  INFO 35727 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 14:54:54.542  INFO 35727 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 14:54:54.577  INFO 35727 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 14:54:54.751  INFO 35727 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-05-06 14:54:54.916  INFO 35727 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-06 14:54:55.046  INFO 35727 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-06 14:54:55.050  INFO 35727 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-05-06 14:54:55.059  INFO 35727 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-05-06 14:54:55.150  INFO 35727 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-06 14:54:55.155  INFO 35727 --- [restartedMain] com.example.DemoApplication              : Started DemoApplication in 6.306 seconds (JVM running for 7.055)
+2017-05-06 14:56:37.332  INFO 35727 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-06 14:56:37.334  INFO 35727 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-06 14:56:37.353  INFO 35727 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-05-06 14:56:37.437  INFO 35727 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-05-06 14:56:37.522 DEBUG 35727 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 14:56:38.777 DEBUG 35727 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 14:56:40.269 DEBUG 35727 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 14:56:41.211 DEBUG 35727 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        shoppingor0_.id as id1_5_,
+        shoppingor0_.created_at as created_2_5_,
+        shoppingor0_.note as note3_5_,
+        shoppingor0_.price as price4_5_,
+        shoppingor0_.user_id as user_id5_5_ 
+    from
+        shopping_order shoppingor0_
+2017-05-06 14:56:41.238 DEBUG 35727 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_0_,
+        user0_.age as age2_6_0_,
+        user0_.email as email3_6_0_,
+        user0_.gender as gender4_6_0_,
+        user0_.name as name5_6_0_,
+        user0_.password as password6_6_0_,
+        user0_.phone as phone7_6_0_ 
+    from
+        user user0_ 
+    where
+        user0_.id=?
+2017-05-06 14:56:41.302 TRACE 35727 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [15]
+2017-05-06 14:56:44.280 DEBUG 35727 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 15:00:01.338 DEBUG 35727 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    insert 
+    into
+        user
+        (age, email, gender, name, password, phone) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2017-05-06 15:00:01.349 TRACE 35727 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [22]
+2017-05-06 15:00:01.354 TRACE 35727 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [cqgexiaolin@126.com]
+2017-05-06 15:00:01.354 TRACE 35727 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [female]
+2017-05-06 15:00:01.354 TRACE 35727 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [User3]
+2017-05-06 15:00:01.355 TRACE 35727 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [12345]
+2017-05-06 15:00:01.355 TRACE 35727 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [123]
+2017-05-06 15:03:59.351  INFO 35727 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e03232: startup date [Sat May 06 14:54:49 NZST 2017]; root of context hierarchy
+2017-05-06 15:03:59.353  INFO 35727 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-06 15:03:59.354  INFO 35727 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-05-06 15:03:59.355  INFO 35727 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-05-06 15:03:59.362  INFO 35727 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2017-05-06 15:04:03.849  INFO 35975 --- [restartedMain] com.example.DemoApplication              : Starting DemoApplication on gezilindeMacBook-Air.local with PID 35975 (/Users/gezilin/Desktop/demo/build/classes/main started by gezilin in /Users/gezilin/Desktop/demo)
+2017-05-06 15:04:03.850  INFO 35975 --- [restartedMain] com.example.DemoApplication              : No active profile set, falling back to default profiles: default
+2017-05-06 15:04:03.942  INFO 35975 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e03232: startup date [Sat May 06 15:04:03 NZST 2017]; root of context hierarchy
+2017-05-06 15:04:05.663  INFO 35975 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-06 15:04:05.673  INFO 35975 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-06 15:04:05.674  INFO 35975 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-06 15:04:05.747  INFO 35975 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-06 15:04:05.748  INFO 35975 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1810 ms
+2017-05-06 15:04:05.755  INFO 35975 --- [localhost-startStop-1] com.example.config.DruidConfig           : init Druid Servlet Configuration 
+2017-05-06 15:04:05.884  INFO 35975 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-06 15:04:05.885  INFO 35975 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-06 15:04:05.885  INFO 35975 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-05-06 15:04:05.887  INFO 35975 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-06 15:04:05.888  INFO 35975 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-06 15:04:05.889  INFO 35975 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-06 15:04:05.889  INFO 35975 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-06 15:04:05.889  INFO 35975 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-06 15:04:06.341  INFO 35975 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-05-06 15:04:06.555  INFO 35975 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-06 15:04:06.565  INFO 35975 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-06 15:04:06.629  INFO 35975 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-06 15:04:06.632  INFO 35975 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-06 15:04:06.633  INFO 35975 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-06 15:04:06.668  INFO 35975 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-06 15:04:06.777  INFO 35975 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-06 15:04:07.362  INFO 35975 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-05-06 15:04:07.527  INFO 35975 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-06 15:04:08.090  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e03232: startup date [Sat May 06 15:04:03 NZST 2017]; root of context hierarchy
+2017-05-06 15:04:08.147  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/orders/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.OrderController.add(java.lang.String,java.lang.Long,java.lang.Long[]) throws java.text.ParseException
+2017-05-06 15:04:08.148  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/orders/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.OrderController.form(org.springframework.ui.ModelMap)
+2017-05-06 15:04:08.148  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/orders/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.OrderController.list(com.example.entity.ShoppingOrder,org.springframework.ui.ModelMap)
+2017-05-06 15:04:08.150  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/products/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.ProductController.add(com.example.entity.Product) throws java.text.ParseException
+2017-05-06 15:04:08.150  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/products/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.form(org.springframework.ui.ModelMap)
+2017-05-06 15:04:08.151  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/products/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.delete(java.lang.Long)
+2017-05-06 15:04:08.151  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/products/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.list(com.example.entity.Product,org.springframework.ui.ModelMap)
+2017-05-06 15:04:08.151  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/products/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.ProductController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-06 15:04:08.151  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/products/edit],methods=[POST]}" onto public java.lang.String com.example.web.admin.ProductController.edit(com.example.entity.Product)
+2017-05-06 15:04:08.153  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/add],methods=[POST]}" onto public java.lang.String com.example.web.admin.UserController.add(com.example.entity.User) throws java.text.ParseException
+2017-05-06 15:04:08.153  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/form],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.form(org.springframework.ui.ModelMap)
+2017-05-06 15:04:08.154  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/delete/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.delete(java.lang.Long)
+2017-05-06 15:04:08.154  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/list],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.list(com.example.entity.User,org.springframework.ui.ModelMap)
+2017-05-06 15:04:08.154  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/editForm/{id}],methods=[GET]}" onto public java.lang.String com.example.web.admin.UserController.editForm(java.lang.Long,org.springframework.ui.ModelMap)
+2017-05-06 15:04:08.154  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/users/edit],methods=[POST]}" onto public java.lang.String com.example.web.admin.UserController.edit(com.example.entity.User)
+2017-05-06 15:04:08.156  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-06 15:04:08.156  INFO 35975 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-06 15:04:08.187  INFO 35975 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 15:04:08.187  INFO 35975 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 15:04:08.227  INFO 35975 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 15:04:08.423  INFO 35975 --- [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-05-06 15:04:08.569  INFO 35975 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-06 15:04:08.631  INFO 35975 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-06 15:04:08.632  INFO 35975 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-05-06 15:04:08.638  INFO 35975 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-05-06 15:04:08.715  INFO 35975 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-06 15:04:08.720  INFO 35975 --- [restartedMain] com.example.DemoApplication              : Started DemoApplication in 5.579 seconds (JVM running for 6.226)
+2017-05-06 15:04:17.280  INFO 35975 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-06 15:04:17.285  INFO 35975 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-06 15:04:17.312  INFO 35975 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2017-05-06 15:04:17.379  INFO 35975 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-05-06 15:04:17.463 DEBUG 35975 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 15:04:20.998 DEBUG 35975 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 15:04:21.964 DEBUG 35975 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 15:04:23.154 DEBUG 35975 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        shoppingor0_.id as id1_5_,
+        shoppingor0_.created_at as created_2_5_,
+        shoppingor0_.note as note3_5_,
+        shoppingor0_.price as price4_5_,
+        shoppingor0_.user_id as user_id5_5_ 
+    from
+        shopping_order shoppingor0_
+2017-05-06 15:04:23.158 DEBUG 35975 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_0_,
+        user0_.age as age2_6_0_,
+        user0_.email as email3_6_0_,
+        user0_.gender as gender4_6_0_,
+        user0_.name as name5_6_0_,
+        user0_.password as password6_6_0_,
+        user0_.phone as phone7_6_0_ 
+    from
+        user user0_ 
+    where
+        user0_.id=?
+2017-05-06 15:04:23.179 TRACE 35975 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [15]
+2017-05-06 15:04:24.259 DEBUG 35975 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 15:04:25.788 DEBUG 35975 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 15:04:43.549 DEBUG 35975 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    insert 
+    into
+        user
+        (age, email, gender, name, password, phone) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2017-05-06 15:04:43.551 TRACE 35975 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [12]
+2017-05-06 15:04:43.552 TRACE 35975 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [cqgexiaolin@126.com]
+2017-05-06 15:04:43.553 TRACE 35975 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [female]
+2017-05-06 15:04:43.553 TRACE 35975 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [User4]
+2017-05-06 15:04:43.553 TRACE 35975 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [12345678]
+2017-05-06 15:04:43.553 TRACE 35975 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [121212]
+2017-05-06 15:04:43.574 DEBUG 35975 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 15:04:46.642 DEBUG 35975 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_0_,
+        user0_.age as age2_6_0_,
+        user0_.email as email3_6_0_,
+        user0_.gender as gender4_6_0_,
+        user0_.name as name5_6_0_,
+        user0_.password as password6_6_0_,
+        user0_.phone as phone7_6_0_ 
+    from
+        user user0_ 
+    where
+        user0_.id=?
+2017-05-06 15:04:46.643 TRACE 35975 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [18]
+2017-05-06 15:04:48.784 DEBUG 35975 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_1_,
+        user0_.age as age2_6_1_,
+        user0_.email as email3_6_1_,
+        user0_.gender as gender4_6_1_,
+        user0_.name as name5_6_1_,
+        user0_.password as password6_6_1_,
+        user0_.phone as phone7_6_1_,
+        shoppingor1_.user_id as user_id5_5_3_,
+        shoppingor1_.id as id1_5_3_,
+        shoppingor1_.id as id1_5_0_,
+        shoppingor1_.created_at as created_2_5_0_,
+        shoppingor1_.note as note3_5_0_,
+        shoppingor1_.price as price4_5_0_,
+        shoppingor1_.user_id as user_id5_5_0_ 
+    from
+        user user0_ 
+    left outer join
+        shopping_order shoppingor1_ 
+            on user0_.id=shoppingor1_.user_id 
+    where
+        user0_.id=?
+2017-05-06 15:04:48.786 TRACE 35975 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [18]
+2017-05-06 15:04:48.824 DEBUG 35975 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    update
+        user 
+    set
+        age=?,
+        email=?,
+        gender=?,
+        name=?,
+        password=?,
+        phone=? 
+    where
+        id=?
+2017-05-06 15:04:48.841 TRACE 35975 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [12]
+2017-05-06 15:04:48.842 TRACE 35975 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [cqgexiaolin@126.com]
+2017-05-06 15:04:48.842 TRACE 35975 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [male]
+2017-05-06 15:04:48.842 TRACE 35975 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [User4]
+2017-05-06 15:04:48.843 TRACE 35975 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [12345678]
+2017-05-06 15:04:48.843 TRACE 35975 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [121212]
+2017-05-06 15:04:48.843 TRACE 35975 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [18]
+2017-05-06 15:04:48.883 DEBUG 35975 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 15:04:51.066 DEBUG 35975 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_0_,
+        user0_.age as age2_6_0_,
+        user0_.email as email3_6_0_,
+        user0_.gender as gender4_6_0_,
+        user0_.name as name5_6_0_,
+        user0_.password as password6_6_0_,
+        user0_.phone as phone7_6_0_ 
+    from
+        user user0_ 
+    where
+        user0_.id=?
+2017-05-06 15:04:51.067 TRACE 35975 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [18]
+2017-05-06 15:04:52.202 DEBUG 35975 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_1_,
+        user0_.age as age2_6_1_,
+        user0_.email as email3_6_1_,
+        user0_.gender as gender4_6_1_,
+        user0_.name as name5_6_1_,
+        user0_.password as password6_6_1_,
+        user0_.phone as phone7_6_1_,
+        shoppingor1_.user_id as user_id5_5_3_,
+        shoppingor1_.id as id1_5_3_,
+        shoppingor1_.id as id1_5_0_,
+        shoppingor1_.created_at as created_2_5_0_,
+        shoppingor1_.note as note3_5_0_,
+        shoppingor1_.price as price4_5_0_,
+        shoppingor1_.user_id as user_id5_5_0_ 
+    from
+        user user0_ 
+    left outer join
+        shopping_order shoppingor1_ 
+            on user0_.id=shoppingor1_.user_id 
+    where
+        user0_.id=?
+2017-05-06 15:04:52.203 TRACE 35975 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [18]
+2017-05-06 15:04:52.214 DEBUG 35975 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 15:04:53.366 DEBUG 35975 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_0_,
+        user0_.age as age2_6_0_,
+        user0_.email as email3_6_0_,
+        user0_.gender as gender4_6_0_,
+        user0_.name as name5_6_0_,
+        user0_.password as password6_6_0_,
+        user0_.phone as phone7_6_0_ 
+    from
+        user user0_ 
+    where
+        user0_.id=?
+2017-05-06 15:04:53.367 TRACE 35975 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [18]
+2017-05-06 15:04:53.376 DEBUG 35975 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        shoppingor0_.user_id as user_id5_5_0_,
+        shoppingor0_.id as id1_5_0_,
+        shoppingor0_.id as id1_5_1_,
+        shoppingor0_.created_at as created_2_5_1_,
+        shoppingor0_.note as note3_5_1_,
+        shoppingor0_.price as price4_5_1_,
+        shoppingor0_.user_id as user_id5_5_1_ 
+    from
+        shopping_order shoppingor0_ 
+    where
+        shoppingor0_.user_id=?
+2017-05-06 15:04:53.378 TRACE 35975 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [18]
+2017-05-06 15:04:53.383 DEBUG 35975 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    delete 
+    from
+        user 
+    where
+        id=?
+2017-05-06 15:04:53.386 TRACE 35975 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [18]
+2017-05-06 15:04:53.417 DEBUG 35975 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 15:04:55.121 DEBUG 35975 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 15:05:03.423 DEBUG 35975 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        product
+        (name, price, quantity) 
+    values
+        (?, ?, ?)
+2017-05-06 15:05:03.424 TRACE 35975 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [test]
+2017-05-06 15:05:03.424 TRACE 35975 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DOUBLE] - [12.0]
+2017-05-06 15:05:03.425 TRACE 35975 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [15]
+2017-05-06 15:05:03.442 DEBUG 35975 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 15:05:05.176 DEBUG 35975 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_0_,
+        product0_.name as name2_3_0_,
+        product0_.price as price3_3_0_,
+        product0_.quantity as quantity4_3_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2017-05-06 15:05:05.177 TRACE 35975 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [13]
+2017-05-06 15:05:08.567 DEBUG 35975 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_0_,
+        product0_.name as name2_3_0_,
+        product0_.price as price3_3_0_,
+        product0_.quantity as quantity4_3_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2017-05-06 15:05:08.568 TRACE 35975 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [13]
+2017-05-06 15:05:08.569 DEBUG 35975 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    update
+        product 
+    set
+        name=?,
+        price=?,
+        quantity=? 
+    where
+        id=?
+2017-05-06 15:05:08.570 TRACE 35975 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [test2]
+2017-05-06 15:05:08.570 TRACE 35975 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DOUBLE] - [12.0]
+2017-05-06 15:05:08.570 TRACE 35975 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [15]
+2017-05-06 15:05:08.570 TRACE 35975 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [13]
+2017-05-06 15:05:08.571 DEBUG 35975 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    delete 
+    from
+        product_orders 
+    where
+        product_id=?
+2017-05-06 15:05:08.572 TRACE 35975 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [13]
+2017-05-06 15:05:08.581 DEBUG 35975 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 15:05:10.408 DEBUG 35975 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_0_,
+        product0_.name as name2_3_0_,
+        product0_.price as price3_3_0_,
+        product0_.quantity as quantity4_3_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+2017-05-06 15:05:10.409 TRACE 35975 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [13]
+2017-05-06 15:05:10.410 DEBUG 35975 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    delete 
+    from
+        product_orders 
+    where
+        product_id=?
+2017-05-06 15:05:10.410 TRACE 35975 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [13]
+2017-05-06 15:05:10.411 DEBUG 35975 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    delete 
+    from
+        product 
+    where
+        id=?
+2017-05-06 15:05:10.412 TRACE 35975 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [13]
+2017-05-06 15:05:10.422 DEBUG 35975 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 15:05:12.289 DEBUG 35975 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        shoppingor0_.id as id1_5_,
+        shoppingor0_.created_at as created_2_5_,
+        shoppingor0_.note as note3_5_,
+        shoppingor0_.price as price4_5_,
+        shoppingor0_.user_id as user_id5_5_ 
+    from
+        shopping_order shoppingor0_
+2017-05-06 15:05:12.291 DEBUG 35975 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_0_,
+        user0_.age as age2_6_0_,
+        user0_.email as email3_6_0_,
+        user0_.gender as gender4_6_0_,
+        user0_.name as name5_6_0_,
+        user0_.password as password6_6_0_,
+        user0_.phone as phone7_6_0_ 
+    from
+        user user0_ 
+    where
+        user0_.id=?
+2017-05-06 15:05:12.292 TRACE 35975 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [15]
+2017-05-06 15:05:15.205 DEBUG 35975 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_,
+        user0_.age as age2_6_,
+        user0_.email as email3_6_,
+        user0_.gender as gender4_6_,
+        user0_.name as name5_6_,
+        user0_.password as password6_6_,
+        user0_.phone as phone7_6_ 
+    from
+        user user0_
+2017-05-06 15:05:15.208 DEBUG 35975 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 15:05:29.256 DEBUG 35975 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_0_,
+        user0_.age as age2_6_0_,
+        user0_.email as email3_6_0_,
+        user0_.gender as gender4_6_0_,
+        user0_.name as name5_6_0_,
+        user0_.password as password6_6_0_,
+        user0_.phone as phone7_6_0_ 
+    from
+        user user0_ 
+    where
+        user0_.id=?
+2017-05-06 15:05:29.257 TRACE 35975 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [17]
+2017-05-06 15:05:29.259 DEBUG 35975 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        product0_.id as id1_3_,
+        product0_.name as name2_3_,
+        product0_.price as price3_3_,
+        product0_.quantity as quantity4_3_ 
+    from
+        product product0_
+2017-05-06 15:05:29.289 DEBUG 35975 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    insert 
+    into
+        shopping_order
+        (created_at, note, price, user_id) 
+    values
+        (?, ?, ?, ?)
+2017-05-06 15:05:29.290 TRACE 35975 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [TIMESTAMP] - [Sat May 06 15:05:29 NZST 2017]
+2017-05-06 15:05:29.290 TRACE 35975 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [prod4]
+2017-05-06 15:05:29.291 TRACE 35975 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DOUBLE] - [24.0]
+2017-05-06 15:05:29.291 TRACE 35975 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [17]
+2017-05-06 15:05:29.314 DEBUG 35975 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        shoppingor0_.id as id1_5_,
+        shoppingor0_.created_at as created_2_5_,
+        shoppingor0_.note as note3_5_,
+        shoppingor0_.price as price4_5_,
+        shoppingor0_.user_id as user_id5_5_ 
+    from
+        shopping_order shoppingor0_
+2017-05-06 15:05:29.316 DEBUG 35975 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_0_,
+        user0_.age as age2_6_0_,
+        user0_.email as email3_6_0_,
+        user0_.gender as gender4_6_0_,
+        user0_.name as name5_6_0_,
+        user0_.password as password6_6_0_,
+        user0_.phone as phone7_6_0_ 
+    from
+        user user0_ 
+    where
+        user0_.id=?
+2017-05-06 15:05:29.317 TRACE 35975 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [15]
+2017-05-06 15:05:29.318 DEBUG 35975 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        user0_.id as id1_6_0_,
+        user0_.age as age2_6_0_,
+        user0_.email as email3_6_0_,
+        user0_.gender as gender4_6_0_,
+        user0_.name as name5_6_0_,
+        user0_.password as password6_6_0_,
+        user0_.phone as phone7_6_0_ 
+    from
+        user user0_ 
+    where
+        user0_.id=?
+2017-05-06 15:05:29.319 TRACE 35975 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [17]

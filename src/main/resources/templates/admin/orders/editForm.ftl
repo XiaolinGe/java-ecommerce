@@ -6,7 +6,7 @@
 <body>
 <div style="width: 200px; margin: 20px auto; font-size: 22px;">Order Edit Page</div>
 <div style="width: 40%; margin:20px auto;">
-    <form action="/orders/edit"  method="post" style="width: 100%">
+    <form action="/admin/orders/edit"  method="post" style="width: 100%">
 
         <input type="text" name="id" value=${order.id} hidden>
 

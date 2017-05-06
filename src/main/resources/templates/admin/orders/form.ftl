@@ -4,7 +4,7 @@
 <body>
 <div style="width: 200px; margin: 20px auto; font-size: 22px;">Order Add Page</div>
 <div style="width: 40%; margin:20px auto;">
-    <form action="/orders/add"  method="post" style="width: 100%">
+    <form action="/admin/orders/add"  method="post" style="width: 100%">
         Price:<br>
         <input type="text" name="price" >
         <br><br>

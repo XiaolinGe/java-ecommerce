@@ -4,7 +4,7 @@
 <body>
 <div style="width: 200px; margin: 20px auto; font-size: 22px;">User Add Page</div>
 <div style="width: 40%; margin:20px auto;">
-    <form action="/users/add"  method="post" style="width: 100%">
+    <form action="/admin/users/add"  method="post" style="width: 100%">
     Name:<br>
     <input a="text" name="name" >
     <br><br>

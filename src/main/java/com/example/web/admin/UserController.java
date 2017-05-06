@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Controller
-@RequestMapping("/users")
+@RequestMapping("/admin/users")
 public class UserController {
 
     @Autowired
@@ -42,18 +42,18 @@ public class UserController {
         }).collect(Collectors.toList());
 
         map.addAttribute("users", userMaps);
-        return "/users/list";
+        return "/admin/users/list";
     }
 
     @GetMapping("form")
     public String form(ModelMap map) {
-        return "/users/form";
+        return "/admin/users/form";
     }
 
    @PostMapping("add")
     public String add(User user) throws ParseException {
         userService.save(user);
-        return "redirect:/users/list ";
+        return "redirect:/admin/users/list ";
     }
 
      @GetMapping("editForm/{id}")
@@ -69,19 +69,19 @@ public class UserController {
         userMap.put("email", user.getEmail());
 
         map.addAttribute("user", userMap);
-        return "/users/editForm";
+        return "/admin/users/editForm";
     }
 
     @PostMapping("edit")
     public String edit(User user) {
         userService.save(user);
-        return "redirect:/users/list";
+        return "redirect:/admin/users/list";
     }
 
     @GetMapping("delete/{id}")
     public String delete(@PathVariable Long id) {
         userService.delete(id);
-        return "redirect:/users/list";
+        return "redirect:/admin/users/list";
     }
 
 

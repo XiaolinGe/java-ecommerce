@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Controller
-@RequestMapping("/products")
+@RequestMapping("/admin/products")
 public class ProductController {
 
     @Autowired
@@ -36,18 +36,18 @@ public class ProductController {
         }).collect(Collectors.toList());
 
         map.addAttribute("products", productMaps);
-        return "/products/list";
+        return "/admin/products/list";
     }
 
     @GetMapping("form")
     public String form(ModelMap map) {
-        return "/products/form";
+        return "/admin/products/form";
     }
 
     @PostMapping("add")
     public String add(Product product) throws ParseException {
         productService.save(product);
-        return "redirect:/products/list ";
+        return "redirect:/admin/products/list ";
     }
 
     @GetMapping("editForm/{id}")
@@ -60,19 +60,19 @@ public class ProductController {
         productMap.put("quantity", product.getQuantity());
 
         map.addAttribute("product", productMap);
-        return "/products/editForm";
+        return "/admin/products/editForm";
     }
 
     @PostMapping("edit")
     public String edit(Product product) {
         productService.save(product);
-        return "redirect:/products/list";
+        return "redirect:/admin/products/list";
     }
 
     @GetMapping("delete/{id}")
     public String delete(@PathVariable Long id) {
         productService.delete(id);
-        return "redirect:/products/list";
+        return "redirect:/admin/products/list";
     }
 
 
