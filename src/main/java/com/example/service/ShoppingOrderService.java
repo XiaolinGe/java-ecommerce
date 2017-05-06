@@ -10,8 +10,10 @@ import java.util.List;
  */
 public interface ShoppingOrderService {
 
+    ShoppingOrder createOrder(String note, User user, List<Long> productIds);
 
+    ShoppingOrder createOrder(String note, Long userId, List<Long> productIds);
 
-    ShoppingOrder createOrder(User user, List<Long> productIds);
+    List<ShoppingOrder> findAll();
 
 }

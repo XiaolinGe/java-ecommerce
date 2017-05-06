@@ -17,7 +17,7 @@ public class ShoppingOrder {
 
     private Double price;
 
-    private Date date;
+    private Date createdAt;
 
     private String note;
 
@@ -25,7 +25,7 @@ public class ShoppingOrder {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToMany(mappedBy = "shoppingOrders")
+    @ManyToMany(mappedBy = "shoppingOrders",cascade = {CascadeType.ALL})
     private List<Product> products;
 
 }

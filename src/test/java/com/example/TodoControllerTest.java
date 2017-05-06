@@ -2,7 +2,7 @@ package com.example;
 
 import com.example.entity.User;
 import com.example.service.UserService;
-import com.example.web.UserController;
+import com.example.web.admin.UserController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

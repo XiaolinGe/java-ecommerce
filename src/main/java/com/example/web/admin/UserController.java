@@ -1,4 +1,4 @@
-package com.example.web;
+package com.example.web.admin;
 
 import com.example.entity.User;
 import com.example.service.UserService;

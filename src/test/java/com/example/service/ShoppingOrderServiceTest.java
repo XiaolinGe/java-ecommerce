@@ -59,7 +59,7 @@ public class ShoppingOrderServiceTest {
         User user2 = userDao.findByName("customerNoOrder").get();
         //List<Long> productIds = productDao.findAll().stream().map(e->e.getId()).collect(Collectors.toList());
          List<Long> productIds = javaslang.collection.List.ofAll(productDao.findAll()).map(Product::getId).toJavaList();
-         ShoppingOrder order = shoppingOrderService.createOrder(user, productIds);
+         ShoppingOrder order = shoppingOrderService.createOrder("note",user, productIds);
 
 
         Double price = javaslang.collection.List.ofAll(productDao.findAll()).map(Product::getPrice).sum().doubleValue();

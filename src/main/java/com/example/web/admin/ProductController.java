@@ -1,4 +1,4 @@
-package com.example.web;
+package com.example.web.admin;
 
 import com.example.entity.Product;
 import com.example.service.ProductService;
