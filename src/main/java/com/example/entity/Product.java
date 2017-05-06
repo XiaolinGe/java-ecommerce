@@ -22,6 +22,8 @@ public class Product {
 
     private Long quantity;
 
+    private String image;
+
     @ManyToMany
 
     @JoinTable(

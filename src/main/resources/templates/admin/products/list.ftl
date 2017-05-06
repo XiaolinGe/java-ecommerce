@@ -41,6 +41,7 @@
         <th>Name</th>
         <th>Price</th>
         <th>Quantity</th>
+        <th>Image</th>
         <th>Actions</th>
     </tr>
 <#list products as product>
@@ -49,6 +50,7 @@
         <td>${product.name}</td>
         <td>${product.price}</td>
         <td>${product.quantity}</td>
+        <td><img src="/${product.image}"  style="width: 80px;" /></td>
         <td><a href="/admin/products/delete/${product.id}"><button>Delete</button></a> &nbsp;&nbsp;<a href="/admin/products/editForm/${product.id}"><button>Edit</button></a></td>
     </tr>
 </#list>

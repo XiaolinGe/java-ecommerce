@@ -6,7 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.List;
@@ -22,20 +26,9 @@ public class ProductController {
 
 
     @GetMapping("list")
-    public String list(Product product, ModelMap map) {
+    public String list(ModelMap map) {
         List<Product> products = productService.findAll();
-
-        List<Map<String,String>> productMaps = products.stream().map(e->{
-            Map<String,String> productMap = new HashMap<>();
-            // products to map
-            productMap.put("id", e.getId().toString());
-            productMap.put("name", e.getName());
-            productMap.put("price", e.getPrice().toString());
-            productMap.put("quantity", e.getQuantity().toString());
-            return productMap;
-        }).collect(Collectors.toList());
-
-        map.addAttribute("products", productMaps);
+        map.addAttribute("products", products);
         return "/admin/products/list";
     }
 
@@ -45,7 +38,13 @@ public class ProductController {
     }
 
     @PostMapping("add")
-    public String add(Product product) throws ParseException {
+    public String add(Product product, MultipartFile file, HttpServletRequest request) throws IOException {
+        String webRoot = request.getServletContext().getRealPath("/");
+        String fileName = file.getOriginalFilename();
+        File newFile = new File(webRoot,fileName);
+        file.transferTo(newFile);
+        product.setImage(fileName);
+
         productService.save(product);
         return "redirect:/admin/products/list ";
     }
@@ -53,18 +52,17 @@ public class ProductController {
     @GetMapping("editForm/{id}")
     public String editForm(@PathVariable Long id, ModelMap map) {
         Product product = productService.findOne(id);
-        Map productMap = new HashMap<>();
-        productMap.put("id", product.getId().toString());
-        productMap.put("name", product.getName());
-        productMap.put("price", product.getPrice());
-        productMap.put("quantity", product.getQuantity());
-
-        map.addAttribute("product", productMap);
+        map.addAttribute("product", product);
         return "/admin/products/editForm";
     }
 
     @PostMapping("edit")
-    public String edit(Product product) {
+    public String edit(Product product,  MultipartFile file, HttpServletRequest request)  throws IOException{
+        String webRoot = request.getServletContext().getRealPath("/");
+        String fileName = file.getOriginalFilename();
+        File newFile = new File(webRoot, fileName);
+        file.transferTo(newFile);
+        product.setImage(fileName);
         productService.save(product);
         return "redirect:/admin/products/list";
     }
