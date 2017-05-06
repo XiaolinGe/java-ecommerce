@@ -20,8 +20,15 @@
     <a href="/admin/orders/list" style="color: cadetblue; margin-right: 20px">Orders</a>
    </div>
 
-<div style="width: 200px; margin: 20px auto; font-size: 22px;">Front Product List Page</div>
+<div style="width: 300px; margin: 20px auto; font-size: 22px;">Front Product List Page</div>
 <div style="width:80%; margin: 20px auto;">
+    <br>
+
+    <div style="color: #ffa41e">User :  ${user.name}</div>
+
+    <br>
+
+
 <div>
     <a href="/admin/products/form"><button>Add</button></a>
     <br>

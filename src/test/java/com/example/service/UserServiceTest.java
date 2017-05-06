@@ -2,9 +2,9 @@ package com.example.service;
 
 import com.example.dao.UserDao;
 import com.example.entity.User;
+import javaslang.control.Option;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +12,10 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
-//@AutoConfigureTestDatabase(replace= AutoConfigureTestDatabase.Replace.NONE)
 
 @DataJpaTest
 @Transactional
@@ -101,24 +101,26 @@ public class UserServiceTest {
     @Test
     public void loginWithCorrectNameAndPassword() throws Exception {
         //Given
-        createUser();
+        User user = new User().setEmail("test@gmail.com").setPassword("admin").setName("admin");
+        userDao.save(user);
         //when
         String name = "admin";
         String password = "admin";
-        boolean login = userService.login(name, password);
+        Option<User> login = userService.login(name, password);
         //then
-        assertEquals(true, login);
+        assertEquals(Option.of(user), login);
     }
 
     @Test
     public void loginWithCorrectNameAndInvalidPassword() throws Exception {
         //Given
-        createUser();
+        User user = new User().setEmail("test@gmail.com").setPassword("admin").setName("admin");
+        userDao.save(user);
         //when
         String name = "admin";
         String password = "wrongPassword";
         //then
-        assertEquals(false, userService.login(name, password));
+        assertEquals(Option.none(), userService.login(name, password));
     }
 
 
@@ -126,28 +128,25 @@ public class UserServiceTest {
     @Test
     public void loginWithCorrectEmailAndPassword() throws Exception {
         //Given
-        createUser();
+        User user = new User().setEmail("test@gmail.com").setPassword("admin").setName("admin");
+        userDao.save(user);
         //when
         String email = "test@gmail.com";
         String password = "admin";
         //then
-        assertEquals(true, userService.login(email, password));
+        assertEquals(Option.of(user), userService.login(email, password));
     }
 
     @Test
     public void loginWithCorrectEmailAndInvalidPassword() throws Exception {
         //Given
-        createUser();
+        User user = new User().setEmail("test@gmail.com").setPassword("admin").setName("admin");
+        userDao.save(user);
         //when
         String email = "test@gmail.com";
         String password = "wrongPassword";
         //then
-        assertEquals(false, userService.login(email, password));
-    }
-
-    private void createUser() {
-        User user = new User().setEmail("test@gmail.com").setPassword("admin").setName("admin");
-        userDao.save(user);
+        assertEquals(Option.none(), userService.login(email, password));
     }
 
 

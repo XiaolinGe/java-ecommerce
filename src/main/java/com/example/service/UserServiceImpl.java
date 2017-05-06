@@ -29,13 +29,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean login(String loginName, String password) {
+    public Option<User> login(String loginName, String password) {
         Option<User> userOpt = userDao.findByName(loginName);
         Option<User> userOpt2 = userDao.findByEmail(loginName);
 
-        return API.List(userOpt, userOpt2)
+
+        javaslang.collection.List<Option<User>> list = API.List(userOpt, userOpt2)
                 .filter(Option::isDefined)
-                .exists(e -> password.equals(e.get().getPassword()));
+                .filter(e -> password.equals(e.get().getPassword()));
+        return  list.toOption().getOrElse(Option.none());
+
     }
 
     @Override
@@ -62,4 +65,10 @@ public class UserServiceImpl implements UserService {
     public void delete(Long id) {
         userDao.delete(id);
     }
+
+    @Override
+    public Option<User> findByName(String name) {
+        return userDao.findByName(name);
+    }
+
 }
