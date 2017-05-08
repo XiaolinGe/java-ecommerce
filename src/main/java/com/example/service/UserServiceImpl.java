@@ -30,14 +30,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Option<User> login(String loginName, String password) {
-        Option<User> userOpt = userDao.findByName(loginName);
-        Option<User> userOpt2 = userDao.findByEmail(loginName);
-
-
-        javaslang.collection.List<Option<User>> list = API.List(userOpt, userOpt2)
+        return API.List(userDao.findByName(loginName), userDao.findByEmail(loginName))
                 .filter(Option::isDefined)
-                .filter(e -> password.equals(e.get().getPassword()));
-        return  list.toOption().getOrElse(Option.none());
+                .filter(e -> password.equals(e.get().getPassword()))
+                .toOption()
+                .getOrElse(Option.none());
 
     }
 
