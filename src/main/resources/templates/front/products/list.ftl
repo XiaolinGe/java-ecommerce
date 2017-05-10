@@ -25,6 +25,9 @@
     <br>
 
     <div style="color: #ffa41e">User :  ${user.name}</div>
+    <a href="/front/users/logout" style="color: #ffa41e; float: right;"> Logout</a>
+    <a href="/front/orders/cart" style="color: #ffa41e; float: right; margin-right: 20px;"> Cart</a>
+
 
     <br>
 
@@ -38,15 +41,17 @@
     <form action="/front/orders/add" method="post">
 <table style="width: 100%">
     <tr>
-        <th>Buy</th>
         <th>Name</th>
         <th>Price</th>
+        <th>Quantity</th>
+        <th>Add to cart</th>
     </tr>
 <#list products as product>
     <tr>
-        <td><input type="checkbox" name="productIds" value=${product.id}  /></td>
         <td>${product.name}</td>
         <td>${product.price}</td>
+        <td>${product.quantity}</td>
+        <td><a href="/front/orders/addtocart/${product.id}">Add to cart</a></td>
     </tr>
 </#list>
 

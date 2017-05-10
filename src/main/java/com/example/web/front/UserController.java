@@ -40,13 +40,26 @@ public class UserController {
             session.setAttribute(LOGIN_USER, userOpt.get());
             return "redirect:/front/products/list";
         }
+        /**
+         * Connection conn = getConnectionFromDB("mysql://localhost:3306/shop","root","root")
+         * conn.exec("insert into xxx");
+         * conn.exec("insert into yyy");
+         *
+         * conn.setAutocommit(false)
+         * conn.exec("insert into xxx");
+         * conn.exec("insert into yyy");
+         * conn.submit();
+         * conn.exec("insert into zzz");
+         */
 
     }
 
     @GetMapping("logout")
     public String logout(HttpSession session) {
         session.removeAttribute(LOGIN_USER);
-        return "redirect:/front/loginForm";
+        session.removeAttribute("CART");
+
+        return "redirect:/front/users/loginForm";
     }
 
     @GetMapping("")
@@ -54,5 +67,10 @@ public class UserController {
         Object obj = session.getAttribute(LOGIN_USER);
         modelMap.addAttribute(LOGIN_USER, session.getAttribute(LOGIN_USER));
         return "/front/products/list";
+    }
+
+    @GetMapping("403")
+    public String noAccess() {
+        return "/admin/403";
     }
 }

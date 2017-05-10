@@ -5,12 +5,13 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Data
 @Entity
 @Accessors(chain = true)
-public class User {
+public class User implements Serializable {
     @Id
     @GeneratedValue
 
@@ -27,6 +28,8 @@ public class User {
     private String phone;
 
     private String email;
+
+    private String role;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<ShoppingOrder> shoppingOrders;
