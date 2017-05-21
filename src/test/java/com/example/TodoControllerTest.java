@@ -2,7 +2,7 @@ package com.example;
 
 import com.example.entity.User;
 import com.example.service.UserService;
-import com.example.web.UserController;
+import com.example.web.admin.UserController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +42,7 @@ public class TodoControllerTest {
         mvc.perform(get("/user/list"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("/user/list"))
-                .andExpect(forwardedUrl("/templates/user/list.ftl"))
+                .andExpect(forwardedUrl("/templates/list.ftl"))
                 .andExpect(model().attribute("todos", hasSize(2)))
                 .andExpect(model().attribute("todos", hasItem(
                         allOf(

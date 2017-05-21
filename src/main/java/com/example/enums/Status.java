@@ -1,20 +1,23 @@
 package com.example.enums;
 
-public  enum Status{
-    PREPARE("PREP"),INPROGRESS("INPR"),FINISH("FNSH");
+public enum Status {
+    PREPARE("PREP"), INPROGRESS("INPR"), FINISH("FNSH");
 
     private String code;
-    private Status(String code){
-        this.code=code;
+
+    private Status(String code) {
+        this.code = code;
     }
-    @Override
-    public String toString(){
-        return code;
-    }    
-    public static Status parseCode(String code){
-        for(Status s:Status.values()){
-            if(s.code.equalsIgnoreCase(code))return s;
+
+    public static Status parseCode(String code) {
+        for (Status s : Status.values()) {
+            if (s.code.equalsIgnoreCase(code)) return s;
         }
         return null;
+    }
+
+    @Override
+    public String toString() {
+        return code;
     }
 }

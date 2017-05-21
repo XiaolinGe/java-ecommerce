@@ -1,12 +1,15 @@
 package com.example.entity;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Data
 @Entity
+@Accessors(chain = true)
+
 public class Product {
 
     @Id
@@ -17,14 +20,17 @@ public class Product {
 
     private Double price;
 
-    private Long amount;
+    private Long quantity;
+
+    private String image;
 
     @ManyToMany
+
     @JoinTable(
             name = "product_orders",
             joinColumns = @JoinColumn(name = "product_id"),
             inverseJoinColumns = @JoinColumn(name = "order_id")
     )
-    private List<Orders> orders;
+    private List<ShoppingOrder> shoppingOrders;
 
 }

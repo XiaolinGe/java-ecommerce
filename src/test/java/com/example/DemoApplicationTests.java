@@ -40,19 +40,5 @@ public class DemoApplicationTests {
     }
 
 
-    @Test
-    public void  login() {
-
-        userDao.deleteAll();
-        User user = new User();
-        user.setName("user1");
-        user.setAge(18);
-        userDao.save(user);
-
-        User user2 =  userService.login("user1");
-        user2.setName("user2");
-        userDao.save(user2);
-        assertThat(userDao.getOne(user.getId()).getName()).isEqualTo("user2");
-    }
 
 }
