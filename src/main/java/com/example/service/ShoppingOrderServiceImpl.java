@@ -34,18 +34,44 @@ public class ShoppingOrderServiceImpl implements ShoppingOrderService {
 
 
     @Override
-    public ShoppingOrder createOrder(String note, User user, List<Long> productIds) {
+    public ShoppingOrder createOrder(String note, User user, Map<Long, Long>  cart) {
         ShoppingOrder order = new ShoppingOrder();
         // TODO filter data form DB
-        List<Product> products = javaslang.collection.List.ofAll(productDao.findAll()).filter(e -> productIds.contains(e.getId())).toJavaList();
-        Double price = javaslang.collection.List.ofAll(products).map(Product::getPrice).sum().doubleValue();
+       // List<Product> products = javaslang.collection.List.ofAll(productDao.findAll()).filter(e -> cart.contains(e.getId())).toJavaList();
+      //  Double price = javaslang.collection.List.ofAll(products).map(Product::getPrice).sum().doubleValue();
 
 
-        javaslang.collection.List.ofAll(products).map(e -> e.setQuantity(e.getQuantity() - 1));
-        //     throw new BussinessException("sold out");
-        if (javaslang.collection.List.ofAll(products).exists(e -> e.getQuantity() < 0)) {
-            throw new BussinessException("this product quantity is less then 0");
+       List<Product> products = cart.map(e-> {
+           Product product = productDao.findOne(e._1);
+           product.setQuantity(product.getQuantity() - e._2);
+           return product;
+       }).toJavaList();
+        Double price = cart.map(e -> productDao.findOne(e._1).getPrice()).sum().doubleValue();
+        
+
+        if(cart.exists(e -> productDao.findOne(e._1).getQuantity() < e._2)) {
+            throw new BussinessException("this product quantity is less than cart quantity");
+
         }
+
+        javaslang.collection.List<String> errList = cart.filter(e-> productDao.findOne(e._1).getQuantity() < e._2 )
+                .map(e -> productDao.findOne(e._1).getName()).toList();
+        if (!errList.isEmpty() ){
+            String errMsg = errList.mkString(", ");
+            System.out.println("errMsg: "+errMsg);
+            throw new BussinessException(errMsg);
+
+        }
+
+
+
+
+
+       // javaslang.collection.List.ofAll(products).map(e -> e.setQuantity(e.getQuantity() - 1));
+        //     throw new BussinessException("sold out");
+        //if (javaslang.collection.List.ofAll(products).exists(e -> e.getQuantity() < 0)) {
+      //      throw new BussinessException("this product quantity is less then 0");
+        //}
 
 
         productDao.save(products);
@@ -59,10 +85,7 @@ public class ShoppingOrderServiceImpl implements ShoppingOrderService {
         return order;
     }
 
-    @Override
-    public ShoppingOrder createOrder(String note, Long userId, List<Long> productIds) {
-        return createOrder(note, userDao.findOne(userId), productIds);
-    }
+
 
     @Override
     public List<ShoppingOrder> findAll() {

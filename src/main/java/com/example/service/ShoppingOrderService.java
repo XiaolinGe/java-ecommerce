@@ -11,11 +11,13 @@ import java.util.List;
 
 public interface ShoppingOrderService {
 
-    @Transactional
-    ShoppingOrder createOrder(String note, User user, List<Long> productIds);
+    //        shoppingOrderService.createOrder(note, userId, Arrays.asList(productIds));
+
+
 
     @Transactional
-    ShoppingOrder createOrder(String note, Long userId, List<Long> productIds);
+    ShoppingOrder createOrder(String note, User user, Map<Long, Long> cart);
+
 
     List<ShoppingOrder> findAll();
 

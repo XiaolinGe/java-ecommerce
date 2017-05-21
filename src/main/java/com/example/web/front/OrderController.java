@@ -35,8 +35,8 @@ public class OrderController {
     private ShoppingOrderService shoppingOrderService;
 
     @PostMapping("add")
-    public String add(Long[] productIds, HttpSession session) throws ParseException {
-        shoppingOrderService.createOrder("From Front Orders", (User) session.getAttribute(LOGIN_USER), Arrays.asList(productIds));
+    public String add(HttpSession session) throws ParseException {
+        shoppingOrderService.createOrder("From Front Orders", (User) session.getAttribute(LOGIN_USER), (Map<Long, Long>) session.getAttribute(CART));
         return "redirect:/front/products/list ";
     }
 

@@ -53,7 +53,7 @@ public class OrderController {
 
     @PostMapping("add")
     public String add(String note, Long userId, Long[] productIds) throws ParseException {
-        shoppingOrderService.createOrder(note, userId, Arrays.asList(productIds));
+       // shoppingOrderService.createOrder(note, userId, Arrays.asList(productIds));
         return "redirect:/admin/orders/list ";
     }
 
