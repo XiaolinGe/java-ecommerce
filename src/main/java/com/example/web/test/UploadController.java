@@ -39,7 +39,7 @@ public class UploadController {
         File newfile = new File(webRoot,fileName);
         file.transferTo(newfile);
 
-        return "<a href='http://localhost:8080/"+fileName+"'> image </a>";
+        return "<a href='http://localhost:8888/"+fileName+"'> image </a>";
     }
 
 
