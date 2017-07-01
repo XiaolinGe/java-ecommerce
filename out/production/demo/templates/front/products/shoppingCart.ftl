@@ -20,44 +20,32 @@
     <a href="/admin/orders/list" style="color: cadetblue; margin-right: 20px">Orders</a>
 </div>
 
-<div style="width: 300px; margin: 20px auto; font-size: 22px;">Shopping Cart Page</div>
+<div style="width: 300px; margin: 20px auto; font-size: 22px;">Shooping Cart Page</div>
 <div style="width:80%; margin: 20px auto;">
     <br>
-
-    <div style="color: #ffa41e">User :  ${user.name}</div>
-    <a href="/front/users/logout" style="color: #ffa41e; float: right;"> Logout</a>
-
     <br>
 
+    <form action="" method="post">
+    <table style="width: 100%">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Quantity In Cart</th>
+        </tr>
+    <#list productVOs as productVO>
+        <tr>
+            <td>${productVO.id}</td>
+            <td>${productVO.name}</td>
+            <td><input type="number" value=${productVO.quantityInCart} ></td>
+        </tr>
+    </#list>
 
-    <div>
-
-        <br>
-    </div>
-    <br>
-
-    <form action="/front/orders/add" method="post">
-        <table style="width: 100%">
-            <tr>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Add to cart</th>
-            </tr>
-        <#list products as product>
-            <tr>
-                <td>${product.name}</td>
-                <td>${product.price}</td>
-                <td>${product.quantity}</td>
-                <td><a href="/front/orders/addtocart/${product.id}">Add to cart</a></td>
-            </tr>
-        </#list>
-
-        </table>
+    </table>
 
         <br>
         <input type="submit" value="Submit">
     </form>
+
 </div>
 
 

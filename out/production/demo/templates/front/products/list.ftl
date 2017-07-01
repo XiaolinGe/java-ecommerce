@@ -26,6 +26,8 @@
 
     <div style="color: #ffa41e">User :  ${user.name}</div>
     <a href="/front/users/logout" style="color: #ffa41e; float: right;"> Logout</a>
+    <a href="/front/orders/cart" style="color: #ffa41e; float: right; margin-right: 20px;"> Cart</a>
+
 
     <br>
 
